@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenneth's Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" id=screen>
+                   
+                    12/3
+                    
+                </th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <button onclick="clearScreen()">c</button>
+                </td>
+                <td>
+                    <button onclick="useBrackets()" >()</button>
+                </td>
+                <td>
+                    <button onclick="usePercent()">%</button>
+                </td>                
+                <td>
+                    <button onclick="inputNum(this)">÷</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="inputNum(this)">7</button>
+                </td>
+                <td>
+                    <button onclick="inputNum(this)">8</button>
+                </td>
+                <td>
+                    <button onclick="inputNum(this)">9</button>
+                </td>                
+                <td>
+                    <button onclick="inputNum(this)">×</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="inputNum(this)">4</button>
+                </td>
+                <td>
+                    <button onclick="inputNum(this)">5</button>
+                </td>
+                <td>
+                    <button onclick="inputNum(this)">6</button>
+                </td>                
+                <td>
+                    <button onclick="inputNum(this)">-</button>
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="inputNum(this)">1</button>
+                </td>
+                <td>
+                    <button onclick="inputNum(this)">2</button>
+                </td>
+                <td>
+                    <button onclick="inputNum(this)">3</button>
+                </td>                
+                <td>
+                    <button onclick="inputNum(this)">+</button>
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="setPosNeg()">+/-</button>
+                </td>
+                <td>
+                    <button onclick="inputNum(this)">0</button>
+                </td>
+                <td>
+                    <button onclick="inputNum(this)">.</button>
+                </td>                
+                <td>
+                    <button onclick="solve()">=</button>
+                </td>                
+            </tr>
+        </tbody>
+
+    </table>
+
+<script src="script.js"></script>
+</body>
+</html>
