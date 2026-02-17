@@ -53,6 +53,20 @@ function usePercent(){
         screen.textContent=eval(screen.textContent)/100;
     }
 }
-function solve(){
-    screen.textContent = eval(screen.textContent);
+function solve() {
+    const ans = eval(screen.textContent).toString();
+    let newans = "";
+
+    if (ans.includes(".")) {
+        const decimalIndex = ans.indexOf(".");
+
+        // keep everything before the decimal + 4 decimal places
+        newans =
+            ans.slice(0, decimalIndex + 1) +
+            ans.slice(decimalIndex + 1, decimalIndex + 5);
+    } else {
+        newans = ans;
+    }
+
+    screen.textContent = newans;
 }
